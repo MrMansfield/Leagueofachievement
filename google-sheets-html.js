@@ -15,7 +15,7 @@ google.load('visualization', '1', {
 var visualization;
 
 function drawVisualization() {
-    var query = new google.visualization.Query('https://spreadsheets.google.com/tq?key=18P7cqQChMhsRIuvxvKvUSMXYrzmkvWHOklIWcBs8Lbgoutput=html&usp=sharing');
+    var query = new google.visualization.Query('https://docs.google.com/spreadsheets/u/0/d/1gz5WCT1OdE_bpwUYmuNUpPYfxLjloNm3TB70vcSpVPQ/gviz/tq?tqx=out:html&tq&gid=2');
     query.setQuery('SELECT A, B, C, D label A "Duration", B "Song", C "Requested By", D "URL"');
     query.send(handleQueryResponse);
 }
